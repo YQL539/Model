@@ -41,3 +41,6 @@
 #define HOSTBACKGROUNGDCOLOR [UIColor colorWithRed:233/255.0 green:233/255.0 blue:233/255.0 alpha:1]
 //输入字体色
 #define HOSTTEXTCOLOR [UIColor lightGrayColor]
+
+#define DIR_WECHAT [CommonUtil GetProjDir]
+#define DIR_INFO [NSString stringWithFormat:@"%@%@",  DIR_WECHAT, @"info"]
