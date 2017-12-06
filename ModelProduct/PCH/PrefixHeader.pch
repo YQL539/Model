@@ -17,7 +17,7 @@
 #import "AFNetworking.h"
 #import "UIImageView+WebCache.h"
 #import "UserDefaults.h"
-#import "BaseNetWorkingClient.h"
+//#import "BaseNetWorkingClient.h"
 #import "MBProgressHUD.h"
 #import "APIDataUrl.h"
 

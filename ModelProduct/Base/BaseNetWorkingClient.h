@@ -8,8 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BaseNetWorkingClient : NSObject
+//数据类型，json/xml POST方法可用，其他的未改
+#define DATATYPE @"xml"
 
+
+@interface BaseNetWorkingClient : NSObject
++ (id)sharedInstance;
 
 /**
  *  HTTP GET请求
@@ -19,7 +23,7 @@
  *  @param success  请求完成
  *  @param failure  请求失败
  */
-+ (void)createGETRequest:(NSString *)urlPath
+- (void)createGETRequest:(NSString *)urlPath
             WithParam:(NSDictionary *)param
               success:(void(^)(id result))success
               failure:(void(^)(NSError *error))failure;
@@ -33,7 +37,7 @@
  *  @param success  请求完成
  *  @param failure  请求失败
  */
-+ (void)createPOSTRequest:(NSString *)urlPath
+- (void)createPOSTRequest:(NSString *)urlPath
                WithParam:(NSDictionary *)param
                  success:(void(^)(id result))success
                  failure:(void(^)(NSError *error))failure;
@@ -46,7 +50,7 @@
  *  @param success  请求完成
  *  @param failure  请求失败
  */
-+ (void)createPUTRequest:(NSString *)urlPath
+- (void)createPUTRequest:(NSString *)urlPath
                 WithParam:(NSDictionary *)param
                   success:(void(^)(id result))success
                   failure:(void(^)(NSError *error))failure;
@@ -59,7 +63,7 @@
  *  @param success  请求完成
  *  @param failure  请求失败
  */
-+ (void)createDELETERequest:(NSString *)urlPath
+- (void)createDELETERequest:(NSString *)urlPath
                 WithParam:(NSDictionary *)param
                   success:(void(^)(id result))success
                   failure:(void(^)(NSError *error))failure;
@@ -74,7 +78,7 @@
  *  @param uploadFileProgress 请求图片的进度条，百分比
  *  @param failure            请求失败
  */
-+ (void)createUpLoadRequest:(NSString *)urlPath
+- (void)createUpLoadRequest:(NSString *)urlPath
             WithParam:(NSDictionary*)param
             withData:(NSData*)data
         withFileName:(NSString *)fileName
@@ -90,7 +94,7 @@
  *  @param setupFilePath             设置下载的路径
  *  @param downloadCompletionHandler 下载完成后（下载完成后可拿到存储的路径）
  */
-+ (void)createDownloadFileWithURLString:(NSString *)URLString
+- (void)createDownloadFileWithURLString:(NSString *)URLString
                    downloadFileProgress:(void(^)(double downloadProgress))downloadFileProgress
                           setupFilePath:(NSURL*(^)(NSURLResponse *response))setupFilePath
               downloadCompletionHandler:(void (^)(NSURL *filePath, NSError *error))downloadCompletionHandler;

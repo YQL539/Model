@@ -12,6 +12,9 @@
 
 #endif /* APIDataUrl_h */
 #pragma mark ****************************VPN服务器IP&&PSK************************************
+//是否需要AES加密
+#define  IF_NEED_EncryptionAES           1
+
 //系统加密
 #define VPNSEVERIP @"119.28.44.232"
 #define VPNPSK @"888888"

@@ -642,9 +642,15 @@
     }
 }
 
-+(CGFloat)getSwitchInch:(CGFloat)inch
++(CGFloat)getHeightSwitchInch:(CGFloat)inch
 {
-    return inch/1334 * SCREENHEIGHT;
+    
+    return inch/768.0 * SCREENHEIGHT;
+}
+
++(CGFloat)getWidthSwitchInch:(CGFloat)inch
+{
+    return inch/1024.0 * SCREENWIDTH;
 }
 
 /// 获取圆形图片
@@ -662,5 +668,15 @@
     UIGraphicsEndImageContext();
     return circleImage;
 }
-
+//获取view的controller
++(UIViewController *)GetControllerFromView:(UIView*) pView
+{
+    for (UIView* pNext = [pView superview]; pNext; pNext = pNext.superview) {
+        UIResponder *pNextResponder = [pNext nextResponder];
+        if ([pNextResponder isKindOfClass:[UIViewController class]]) {
+            return (UIViewController *)pNextResponder;
+        }
+    }
+    return nil;
+}
 @end

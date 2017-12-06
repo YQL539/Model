@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface NavigationViewController : UINavigationController
+-(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated;
 
 @end

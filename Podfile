@@ -11,6 +11,6 @@ pod 'Masonry', '~> 1.0.1'
 pod 'Reachability', '~> 3.2'
 pod 'MJRefresh', '~> 3.1.12'
 pod 'MBProgressHUD', '~> 1.0.0'
-
-
+pod 'FDFullscreenPopGesture', '~> 1.1'
+pod 'XMLDictionary', '~> 1.4'
 end

@@ -7,7 +7,6 @@
 //
 
 #import "BaseViewController.h"
-#import "UIBarButtonItem+Extention.h"
 @interface BaseViewController ()
 
 @end
@@ -19,11 +18,11 @@
     self.view.backgroundColor=[UIColor whiteColor];
     self.navigationController.navigationBar.barTintColor =HOSTCOLOR;
     self.navigationItem.backBarButtonItem=[[UIBarButtonItem alloc]initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+    
     NSDictionary *titleAttr = @{
                                 NSForegroundColorAttributeName:[UIColor whiteColor],
                                 NSFontAttributeName:[UIFont systemFontOfSize:20]
                                 };
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithImage:[UIImage imageNamed:@"0_common_return_h.png"] highImage:[UIImage imageNamed:@"0_common_return_h.png"] addTarget:self action:@selector(back2MyScreen) forControlEvents:UIControlEventTouchUpInside];
     [self.navigationController.navigationBar setTitleTextAttributes:titleAttr];
     
     if (IS_IOS_(7)) {
@@ -33,13 +32,17 @@
         }
     }
 }
--(void)back2MyScreen{
-    [self.navigationController popViewControllerAnimated:NO];
-}
+
 -(BOOL)prefersStatusBarHidden{
     return NO;
 }
-
+//三方侧滑返回
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+    if ([otherGestureRecognizer.delegate isKindOfClass:NSClassFromString(@"_FDFullscreenPopGestureRecognizerDelegate")]) {
+        return YES;
+    }
+    return NO;
+}
 
 -(UIStatusBarStyle)preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;

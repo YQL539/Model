@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180E07E61F5EAB080073E1AD /* testViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E07E51F5EAB080073E1AD /* testViewController.m */; };
 		187196481F4151A1006282D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 187196471F4151A1006282D8 /* main.m */; };
 		1871964B1F4151A1006282D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1871964A1F4151A1006282D8 /* AppDelegate.m */; };
 		1871964E1F4151A1006282D8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1871964D1F4151A1006282D8 /* ViewController.m */; };
@@ -28,14 +29,15 @@
 		189711351F47D71B003AA4EB /* CommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 189711211F47D71B003AA4EB /* CommonUtil.m */; };
 		189711361F47D71B003AA4EB /* UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 189711231F47D71B003AA4EB /* UserDefaults.m */; };
 		189711371F47D71B003AA4EB /* NSString+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = 189711261F47D71B003AA4EB /* NSString+URL.m */; };
-		189711381F47D71B003AA4EB /* UIBarButtonItem+Extention.m in Sources */ = {isa = PBXBuildFile; fileRef = 189711281F47D71B003AA4EB /* UIBarButtonItem+Extention.m */; };
-		189711391F47D71B003AA4EB /* UIBarButtonItem+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 1897112A1F47D71B003AA4EB /* UIBarButtonItem+Item.m */; };
-		1897113A1F47D71B003AA4EB /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 1897112C1F47D71B003AA4EB /* UIImage+Image.m */; };
-		1897113B1F47D71B003AA4EB /* UITableView+SubviewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1897112E1F47D71B003AA4EB /* UITableView+SubviewAdditions.m */; };
 		1897113C1F47D71B003AA4EB /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 189711301F47D71B003AA4EB /* UIView+Extension.m */; };
-		1897113D1F47D71B003AA4EB /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 189711321F47D71B003AA4EB /* UIView+Frame.m */; };
-		1897113E1F47D71B003AA4EB /* UIViewController+KNSemiModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 189711341F47D71B003AA4EB /* UIViewController+KNSemiModal.m */; };
 		585E197C3A3E2C865EA1745E /* libPods-ModelProduct.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556D5381D71BCD284092320D /* libPods-ModelProduct.a */; };
+		B08224B91FD79F6000C76F01 /* BaseNetWorkingClient+NetworkLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = B08224B81FD79F6000C76F01 /* BaseNetWorkingClient+NetworkLogin.m */; };
+		B08224BC1FD7BB6800C76F01 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B08224BB1FD7BB6800C76F01 /* LoginModel.m */; };
+		B0957DE41FD54871009CD615 /* DataEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = B0957DE21FD54871009CD615 /* DataEncryption.m */; };
+		B0957DEE1FD548CD009CD615 /* FBEncryptorAES.m in Sources */ = {isa = PBXBuildFile; fileRef = B0957DE71FD548CD009CD615 /* FBEncryptorAES.m */; };
+		B0957DEF1FD548CD009CD615 /* NSData+PVLBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = B0957DE91FD548CD009CD615 /* NSData+PVLBase64.m */; };
+		B0957DF01FD548CD009CD615 /* NSString+PVLEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = B0957DEB1FD548CD009CD615 /* NSString+PVLEncrypt.m */; };
+		B0957DF11FD548CD009CD615 /* PVLEncryptKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B0957DED1FD548CD009CD615 /* PVLEncryptKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180E07E41F5EAB080073E1AD /* testViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testViewController.h; sourceTree = "<group>"; };
+		180E07E51F5EAB080073E1AD /* testViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testViewController.m; sourceTree = "<group>"; };
 		187196431F4151A1006282D8 /* ModelProduct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModelProduct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		187196471F4151A1006282D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		187196491F4151A1006282D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,23 +105,25 @@
 		189711231F47D71B003AA4EB /* UserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaults.m; sourceTree = "<group>"; };
 		189711251F47D71B003AA4EB /* NSString+URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URL.h"; sourceTree = "<group>"; };
 		189711261F47D71B003AA4EB /* NSString+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URL.m"; sourceTree = "<group>"; };
-		189711271F47D71B003AA4EB /* UIBarButtonItem+Extention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extention.h"; sourceTree = "<group>"; };
-		189711281F47D71B003AA4EB /* UIBarButtonItem+Extention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extention.m"; sourceTree = "<group>"; };
-		189711291F47D71B003AA4EB /* UIBarButtonItem+Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Item.h"; sourceTree = "<group>"; };
-		1897112A1F47D71B003AA4EB /* UIBarButtonItem+Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Item.m"; sourceTree = "<group>"; };
-		1897112B1F47D71B003AA4EB /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
-		1897112C1F47D71B003AA4EB /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
-		1897112D1F47D71B003AA4EB /* UITableView+SubviewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SubviewAdditions.h"; sourceTree = "<group>"; };
-		1897112E1F47D71B003AA4EB /* UITableView+SubviewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SubviewAdditions.m"; sourceTree = "<group>"; };
 		1897112F1F47D71B003AA4EB /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		189711301F47D71B003AA4EB /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
-		189711311F47D71B003AA4EB /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
-		189711321F47D71B003AA4EB /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
-		189711331F47D71B003AA4EB /* UIViewController+KNSemiModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KNSemiModal.h"; sourceTree = "<group>"; };
-		189711341F47D71B003AA4EB /* UIViewController+KNSemiModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KNSemiModal.m"; sourceTree = "<group>"; };
 		526B9694A1262A13B5A697EF /* Pods-ModelProduct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModelProduct.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModelProduct/Pods-ModelProduct.release.xcconfig"; sourceTree = "<group>"; };
 		556D5381D71BCD284092320D /* libPods-ModelProduct.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ModelProduct.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E799656CC38EEBC9D272CAA /* Pods-ModelProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModelProduct.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModelProduct/Pods-ModelProduct.debug.xcconfig"; sourceTree = "<group>"; };
+		B08224B71FD79F6000C76F01 /* BaseNetWorkingClient+NetworkLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaseNetWorkingClient+NetworkLogin.h"; sourceTree = "<group>"; };
+		B08224B81FD79F6000C76F01 /* BaseNetWorkingClient+NetworkLogin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "BaseNetWorkingClient+NetworkLogin.m"; sourceTree = "<group>"; };
+		B08224BA1FD7BB6800C76F01 /* LoginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
+		B08224BB1FD7BB6800C76F01 /* LoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
+		B0957DE21FD54871009CD615 /* DataEncryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataEncryption.m; sourceTree = "<group>"; };
+		B0957DE31FD54871009CD615 /* DataEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataEncryption.h; sourceTree = "<group>"; };
+		B0957DE61FD548CD009CD615 /* FBEncryptorAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBEncryptorAES.h; sourceTree = "<group>"; };
+		B0957DE71FD548CD009CD615 /* FBEncryptorAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBEncryptorAES.m; sourceTree = "<group>"; };
+		B0957DE81FD548CD009CD615 /* NSData+PVLBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+PVLBase64.h"; sourceTree = "<group>"; };
+		B0957DE91FD548CD009CD615 /* NSData+PVLBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+PVLBase64.m"; sourceTree = "<group>"; };
+		B0957DEA1FD548CD009CD615 /* NSString+PVLEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PVLEncrypt.h"; sourceTree = "<group>"; };
+		B0957DEB1FD548CD009CD615 /* NSString+PVLEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PVLEncrypt.m"; sourceTree = "<group>"; };
+		B0957DEC1FD548CD009CD615 /* PVLEncryptKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVLEncryptKit.h; sourceTree = "<group>"; };
+		B0957DED1FD548CD009CD615 /* PVLEncryptKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVLEncryptKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,7 +182,6 @@
 				1871968C1F415387006282D8 /* Class */,
 				187196891F41532A006282D8 /* Base */,
 				1871968A1F41532A006282D8 /* Custom */,
-				1871968B1F41532A006282D8 /* Common */,
 				1871969E1F4153C7006282D8 /* 3R */,
 				1871969F1F4153C7006282D8 /* Resource */,
 				187196A01F4153ED006282D8 /* API */,
@@ -240,15 +245,10 @@
 		1871968A1F41532A006282D8 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				B0957DE31FD54871009CD615 /* DataEncryption.h */,
+				B0957DE21FD54871009CD615 /* DataEncryption.m */,
 			);
 			path = Custom;
-			sourceTree = "<group>";
-		};
-		1871968B1F41532A006282D8 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Common;
 			sourceTree = "<group>";
 		};
 		1871968C1F415387006282D8 /* Class */ = {
@@ -277,6 +277,8 @@
 			children = (
 				188360C71F47DD7D004E3F68 /* FirstViewController.h */,
 				188360C81F47DD7D004E3F68 /* FirstViewController.m */,
+				180E07E41F5EAB080073E1AD /* testViewController.h */,
+				180E07E51F5EAB080073E1AD /* testViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -284,6 +286,10 @@
 		1871968F1F415387006282D8 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				B08224B71FD79F6000C76F01 /* BaseNetWorkingClient+NetworkLogin.h */,
+				B08224B81FD79F6000C76F01 /* BaseNetWorkingClient+NetworkLogin.m */,
+				B08224BA1FD7BB6800C76F01 /* LoginModel.h */,
+				B08224BB1FD7BB6800C76F01 /* LoginModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -408,6 +414,7 @@
 		1871969E1F4153C7006282D8 /* 3R */ = {
 			isa = PBXGroup;
 			children = (
+				B0957DE51FD548CD009CD615 /* encryptor */,
 			);
 			path = 3R;
 			sourceTree = "<group>";
@@ -451,20 +458,8 @@
 			children = (
 				189711251F47D71B003AA4EB /* NSString+URL.h */,
 				189711261F47D71B003AA4EB /* NSString+URL.m */,
-				189711271F47D71B003AA4EB /* UIBarButtonItem+Extention.h */,
-				189711281F47D71B003AA4EB /* UIBarButtonItem+Extention.m */,
-				189711291F47D71B003AA4EB /* UIBarButtonItem+Item.h */,
-				1897112A1F47D71B003AA4EB /* UIBarButtonItem+Item.m */,
-				1897112B1F47D71B003AA4EB /* UIImage+Image.h */,
-				1897112C1F47D71B003AA4EB /* UIImage+Image.m */,
-				1897112D1F47D71B003AA4EB /* UITableView+SubviewAdditions.h */,
-				1897112E1F47D71B003AA4EB /* UITableView+SubviewAdditions.m */,
 				1897112F1F47D71B003AA4EB /* UIView+Extension.h */,
 				189711301F47D71B003AA4EB /* UIView+Extension.m */,
-				189711311F47D71B003AA4EB /* UIView+Frame.h */,
-				189711321F47D71B003AA4EB /* UIView+Frame.m */,
-				189711331F47D71B003AA4EB /* UIViewController+KNSemiModal.h */,
-				189711341F47D71B003AA4EB /* UIViewController+KNSemiModal.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -475,6 +470,21 @@
 				556D5381D71BCD284092320D /* libPods-ModelProduct.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0957DE51FD548CD009CD615 /* encryptor */ = {
+			isa = PBXGroup;
+			children = (
+				B0957DE61FD548CD009CD615 /* FBEncryptorAES.h */,
+				B0957DE71FD548CD009CD615 /* FBEncryptorAES.m */,
+				B0957DE81FD548CD009CD615 /* NSData+PVLBase64.h */,
+				B0957DE91FD548CD009CD615 /* NSData+PVLBase64.m */,
+				B0957DEA1FD548CD009CD615 /* NSString+PVLEncrypt.h */,
+				B0957DEB1FD548CD009CD615 /* NSString+PVLEncrypt.m */,
+				B0957DEC1FD548CD009CD615 /* PVLEncryptKit.h */,
+				B0957DED1FD548CD009CD615 /* PVLEncryptKit.m */,
+			);
+			path = encryptor;
 			sourceTree = "<group>";
 		};
 		BA0DDA56DF9D142D22AFD32F /* Pods */ = {
@@ -556,7 +566,7 @@
 				TargetAttributes = {
 					187196421F4151A1006282D8 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = JG6MYTDY9T;
+						DevelopmentTeam = 2KW487Z65M;
 						ProvisioningStyle = Automatic;
 					};
 					1871965B1F4151A1006282D8 = {
@@ -655,7 +665,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		E33A419260E11D3165053629 /* [CP] Embed Pods Frameworks */ = {
@@ -684,23 +694,25 @@
 				189711361F47D71B003AA4EB /* UserDefaults.m in Sources */,
 				1871964E1F4151A1006282D8 /* ViewController.m in Sources */,
 				188360C31F47DAC2004E3F68 /* TabBarViewController.m in Sources */,
+				B08224B91FD79F6000C76F01 /* BaseNetWorkingClient+NetworkLogin.m in Sources */,
+				B0957DEE1FD548CD009CD615 /* FBEncryptorAES.m in Sources */,
+				B0957DE41FD54871009CD615 /* DataEncryption.m in Sources */,
 				189711151F47D4C8003AA4EB /* BaseViewController.m in Sources */,
+				180E07E61F5EAB080073E1AD /* testViewController.m in Sources */,
 				188360C91F47DD7D004E3F68 /* FirstViewController.m in Sources */,
-				1897113D1F47D71B003AA4EB /* UIView+Frame.m in Sources */,
+				B0957DF11FD548CD009CD615 /* PVLEncryptKit.m in Sources */,
 				189711351F47D71B003AA4EB /* CommonUtil.m in Sources */,
-				1897113E1F47D71B003AA4EB /* UIViewController+KNSemiModal.m in Sources */,
 				1871964B1F4151A1006282D8 /* AppDelegate.m in Sources */,
 				188360C61F47DB21004E3F68 /* NavigationViewController.m in Sources */,
 				189711141F47D4C8003AA4EB /* BaseNetWorkingClient.m in Sources */,
+				B0957DF01FD548CD009CD615 /* NSString+PVLEncrypt.m in Sources */,
 				189711131F47D4C8003AA4EB /* BaseModel.m in Sources */,
-				189711391F47D71B003AA4EB /* UIBarButtonItem+Item.m in Sources */,
+				B08224BC1FD7BB6800C76F01 /* LoginModel.m in Sources */,
 				189711371F47D71B003AA4EB /* NSString+URL.m in Sources */,
-				1897113A1F47D71B003AA4EB /* UIImage+Image.m in Sources */,
 				188360D21F47DDBD004E3F68 /* FourthViewController.m in Sources */,
 				1897113C1F47D71B003AA4EB /* UIView+Extension.m in Sources */,
+				B0957DEF1FD548CD009CD615 /* NSData+PVLBase64.m in Sources */,
 				187196481F4151A1006282D8 /* main.m in Sources */,
-				1897113B1F47D71B003AA4EB /* UITableView+SubviewAdditions.m in Sources */,
-				189711381F47D71B003AA4EB /* UIBarButtonItem+Extention.m in Sources */,
 				188360CF1F47DDA3004E3F68 /* ThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -854,12 +866,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = JG6MYTDY9T;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2KW487Z65M;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ModelProduct/PCH/PrefixHeader.pch";
 				INFOPLIST_FILE = ModelProduct/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.woyun.WoVPNForStore;
+				PRODUCT_BUNDLE_IDENTIFIER = app.linkcare.videochat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WARNING_CFLAGS = (
 					"-Wno-deprecated-declarations",
 					"-Wno-documentation",
@@ -874,12 +889,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = JG6MYTDY9T;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2KW487Z65M;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ModelProduct/PCH/PrefixHeader.pch";
 				INFOPLIST_FILE = ModelProduct/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.woyun.WoVPNForStore;
+				PRODUCT_BUNDLE_IDENTIFIER = app.linkcare.videochat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WARNING_CFLAGS = (
 					"-Wno-deprecated-declarations",
 					"-Wno-documentation",

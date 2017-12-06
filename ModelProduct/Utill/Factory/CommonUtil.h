@@ -256,8 +256,18 @@
 +(CGFloat)getSwitchInch:(CGFloat)inch;
 
 /*
+ * 获取高尺寸
+ */
++(CGFloat)getHeightSwitchInch:(CGFloat)inch;
+/*
+ * 获取宽尺寸
+ */
++(CGFloat)getWidthSwitchInch:(CGFloat)inch;
+
+/*
  * 获取圆形图片
  */
 + (UIImage *)circularClipImage:(UIImage *)image;
-
+//获取view的controller
++(UIViewController *)GetControllerFromView:(UIView*) pView;
 @end
